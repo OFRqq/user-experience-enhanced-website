@@ -3,7 +3,7 @@
 {% if storydetail %}
 <div class="story-detail">
     <h1>{{ storydetail.title }}</h1>
-    <img src="https://fdnd-agency.directus.app/assets/{{ storydetail.image }}" alt="story image">
+    <img src="https://fdnd-agency.directus.app/assets/{{ storydetail.image }}" alt="story image" width="80%" height="80%">
     <p>{{ storydetail.summary }}</p>
     {% if storydetail.audio[0] %}
     <audio controls src="https://fdnd-agency.directus.app/assets/{{ storydetail.audio[0]}}"></audio>
