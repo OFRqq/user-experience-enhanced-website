@@ -1,0 +1,89 @@
+/* FONTS INLADEN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url(assets/Poppins/Poppins-Medium.ttf);
+}
+html {
+    width: 100%;
+    height: 100%;
+
+body {
+    margin-left: clamp(0rem, -8.3333rem + 37.037vw, 25rem);
+    margin-right: clamp(0rem, -8.3333rem + 37.037vw, 25rem);
+
+    /* COLORS */
+    --background-color: linear-gradient(to bottom, #471871, #142151);
+    --story-background-color: #FFFFFF;
+
+    --story-text-black: #000000;
+    --story-text-white: #ffffff;
+
+    --button-color: #9264F4;
+
+    /* BORDER-RADIUS */
+    --br-xs: 0.125rem;
+    --br-sm: 0.25rem;
+    --br-md: 1rem;
+    --br-lg: 1.5rem;
+    --br-full: 9999px;
+
+    /* SIZING */
+    --xs: .25rem;
+    --sm: .8rem;
+    --md: 1rem;
+    --lg: 2rem;
+    --xl: 3rem;
+    --xxl: 5rem;
+
+    /* FONTS */
+    --primary-font:poppins;
+    --primary-font-weight:600;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    font-family: var(--primary-font);
+    font-weight:var(--primary-font-weight);
+    color:white;
+}
+
+h1,
+.xl {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+h2,
+.lg {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+h3,
+.md {
+    font-size: clamp(1.5rem, 4vw, 2rem)
+}
+
+h4,
+.sm {
+    font-size: clamp(1rem, 3.5vw, 1.5rem)
+}
+
+.xs {
+    font-size: 1rem;
+}
+
+main {
+    max-width: fit-content;
+    margin: 1vw auto;
+}
+
+}

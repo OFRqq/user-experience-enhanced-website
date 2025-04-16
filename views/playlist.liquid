@@ -1,0 +1,31 @@
+{% render 'partials/head.liquid', title: 'Tumi Mundo' %}
+
+<h1>Create your playlist</h1>
+
+<form class="form-playlist" method="POST" action="/playlist">
+<label hidden for="title">Fill in the title of your playlist</label>
+  <input id="title" class="title" type="text" name="title" placeholder="Fill in your title">
+  <label hidden for="description">fill in the description of your playlist</label>
+  <input id="description" class="description" type="text" name="description" placeholder="description">
+  <button type="submit" onClick="window.location.reload();">Add playlist</button>
+</form>
+
+<main class="playlist-container">
+  <ul>
+    {% for playlist in playlist %}
+    <li class="playlist">
+      <h2>{{ playlist.title }}</h2>
+      <p>{{ playlist.description }}</p>
+     {% if playlist.image %}
+      <img rsc="https://fdnd-agency.directus.app/assets/{{ playlist.image }}" alt="playlist image not loading ">
+      {% else %}
+      <p>[no image available]</p>
+      {% endif %} 
+    </li>
+    {% endfor %}
+  </ul>
+</main>
+
+<footer>
+  <a href="/">Back to all stories</a>
+</footer>

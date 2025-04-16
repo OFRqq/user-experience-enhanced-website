@@ -1,0 +1,59 @@
+{% render 'partials/head.liquid', title: 'Tumi Mundo' %}
+
+<h1>All stories</h1>
+
+<form class="search-form" action="/">
+<button class="search-button" type="submit"></button>
+  <input class="searchbar" type="search">
+</form>
+
+<details class="detail-container">
+    <summary>Filters</summary>
+    <details>
+        <summary>Animal</summary>
+        <la>
+            <li><a href="?filter=animal.6">6</a></li>
+            <li><a href="?filter=animal.7">7</a></li>
+            <li><a href="?filter=animal.8">8</a></li>
+        </la>
+    </details>
+
+    <details>
+        <summary>Language</summary>
+        <la>
+            <li><a href="?filter=language.1">1</a></li>
+            <li><a href="?filter=language.2">2</a></li>
+            <li><a href="?filter=language.5">5</a></li>
+            <li><a href="?filter=language.6">6</a></li>
+            <li><a href="?filter=language.7">7</a></li>
+        </la>
+    </details>
+    <details>
+        <summary>Season</summary>
+        <la>
+            <li><a href="?filter=season"></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </la>
+    </details>
+    <details>
+        <summary>Sorting</summary>
+        <la>
+            <li><a href="?sort=season"></a></li>
+            <li><a href="?sort=animal"></a></li>
+        </la>
+    </details>
+</details>
+
+<main>
+    <ul class="stories-container">
+        {% for story in story %}
+        {% render 'partials/story.liquid', story: story %}
+        {% endfor %}
+    </ul>
+</main>
+
+<footer>
+    <a href="/playlist">playlists</a>
+</footer>
+</body>

@@ -1,0 +1,20 @@
+html {
+  
+    body{
+      
+        a{
+            color:white;
+        }
+
+        .story-detail {
+            text-align: center;
+            color:white;
+            font-family: Poppins;
+
+            img {
+                border-radius: var(--br-md);
+            }
+        }
+
+    }
+}
