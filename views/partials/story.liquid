@@ -5,6 +5,6 @@
         <p>{{ story.summary }}</p>
         <input type="hidden" value="{{ story.id }}" name="story_id">
         {% comment %} <audio controls src="https://fdnd-agency.directus.app/assets/{{ story.audio[0].audio_file }}"></audio> {% endcomment %}
-        <img src="https://fdnd-agency.directus.app/assets/{{ story.image.id }}" alt="story image">
+        <img src="https://fdnd-agency.directus.app/assets/{{ story.image.id }}" alt="story image" width="20vw" height="10vh">
     </form>
 </li>
