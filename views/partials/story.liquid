@@ -1,7 +1,7 @@
 <li>
     <form class="story" action="/favorite">
         <h2>{{ story.title }}</a></h2>
-        <a href="/story/{{ story.id  }}">listen to story {{ story.id }}</a>
+        <a href="/story/{{ story.id  }}">Play story {{ story.id }}</a>
         <p>{{ story.summary }}</p>
         <input type="hidden" value="{{ story.id }}" name="story_id">
         {% comment %} <audio controls src="https://fdnd-agency.directus.app/assets/{{ story.audio[0].audio_file }}"></audio> {% endcomment %}
