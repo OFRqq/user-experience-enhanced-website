@@ -99,7 +99,7 @@ html {
                 list-style-type: none;
                 border-radius: var(--br-md);
             }
-
+            
             .story {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
